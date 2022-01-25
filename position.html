@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #555;
+        }
+
+        .card {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            margin: 300px auto;
+            position: relative;
+        }
+
+        .discount {
+            font-size: 20px;
+            position: absolute;
+            top: -20px;
+            right: -15px;
+            display: inline-block;
+            background-color: yellow;
+            padding: 20px 30px;
+            transform: rotate(45deg);
+
+
+        }
+
+        .vargain {
+            background-color: bisque;
+            height: 600px;
+            width: 600px;
+            margin: 200px auto;
+            padding: 30px 40px;
+            position: relative;
+        }
+
+        .promotion {
+            color: black;
+            font-size: 30px;
+            background-color: indigo;
+            padding: 20px 10px;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+            transform: rotate(45deg);
+        }
+
+        p {
+            font-size: 50px;
+            color: saddlebrown;
+            font-family: 'Franklin Gothic Medium';
+            margin-top: 50px;
+            overflow: scroll;
+        }
+
+        label {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        form div input {
+            font-size: 30px;
+            color: crimson;
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="vargain">
+        <span class="promotion">Promotion</span>
+        <form>
+            <p>What would you like to order</p><br><br><br>
+            <label for="foods">foods list</label>
+            <select id="foods" name="foods">
+                <option value="cheeese burger">Cheese Burger</option>
+                <option value="potato chips">Potato Chips</option>
+                <option value="coca cola">Coca Cola</option>
+            </select><br><br>
+
+            </label>
+            <input type="submit" value="Order"><br><br><br>
+            <textarea rows="7" cols="7" id="information" name='informataion'>type</textarea><br><br>
+
+            <label for="pw">password</label>
+            <input type="password" pattern="[a-zA-Z0-9]" id="pw"><br><br><br>
+            <label for="audio">Volume</label>
+            <input type="range" id="audio" value="audio"><br><br>
+            <div id="sm">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
